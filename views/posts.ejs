@@ -1,0 +1,42 @@
+<%- include("partials/header") -%>
+
+<body>
+    <div class="container">
+        <h1 class="padding">Posts </h1>
+        <hr>
+
+ 
+
+   <%    for(let i = 0; i<contentPost.length; i++){ %>
+
+
+            <h1  style="text-align: left"><%=contentPost[i].title%></h1>
+            <p  style="text-align: left">
+            <%=contentPost[i].content + " ..."%>
+            <a href="/posts/<%=contentPost[i]._id%>">Read More</a>
+            </p>
+       <% } %>     
+
+
+
+
+    
+     
+  
+
+    
+
+    
+      
+
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
+
+<%- include("partials/footer") -%>

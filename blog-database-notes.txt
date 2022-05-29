@@ -1,0 +1,33 @@
+  <%  contentPost.forEach(function(content){ %> 
+
+    <% const bodySliced = .slice(0,250); %>
+    <h1><%= content.title  %> </h1>
+    <p style="text-align: left"><%= bodySliced %>
+        <a href="/posts/<%= content.title  %>">.....Read more</a>
+    </p>
+
+<% }) %> 
+
+
+
+
+
+
+
+       <%  for(let i = 0; i < contentPost[i].length; i++) { %>
+  <%  }   %>
+
+
+
+
+
+
+   <%#  
+    <% const bodySliced = post[i].content.slice(0,250); %>
+
+    <h1><%= post[i].title  %> </h1>
+    <p style="text-align: left"><%= bodySliced %>
+        <a href="/posts/<%= contentPost[i].title %>">.....Read more</a>
+    </p>
+
+    %> 
